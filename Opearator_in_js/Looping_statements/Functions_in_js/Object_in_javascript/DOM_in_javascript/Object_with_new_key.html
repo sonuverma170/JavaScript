@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object creation in javascript</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+     
+
+const persons=new Object();
+{
+persons.lastName="Suraj";
+persons.firstName="mohan";
+persons.age=20;
+}
+document.getElementById("demo").innerHTML=persons.lastName+" is "+ persons.age+"younger bhai";
+
+
+
+//how to creat object in javascript in mutable 
+const stu=new Object();
+stu.firstName="Mohan";
+stu.lastName="Verma";
+stu.eyeColor="brown";
+
+
+const st=stu;
+document.getElementById("demo1").innerHTML=st.firstName+"and "+st.lastName+" color of eys"+st.eyeColor;
+    </script>
+</body>
+</html>
