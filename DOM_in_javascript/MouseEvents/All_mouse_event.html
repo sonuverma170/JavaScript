@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+</head>
+<style>
+   
+        #m1,#m2,#m3,#m4,#m5,#m6{
+width: 200px;
+height: 200px;
+
+        }
+</style>
+<script>
+    function myMausedown(){
+        document.getElementById("m1").style.backgroundColor="red";
+    } 
+    function myMauseUp(){
+        document.getElementById("m2").style.backgroundColor="blue";
+    }  
+       function myMauseOver(){
+        document.getElementById("m3").style.backgroundColor="black";
+    }
+         function myMauseLeave(){
+        document.getElementById("m4").style.backgroundColor="green";
+    }
+         function myMauseWheel(){
+        document.getElementById("m5").style.backgroundColor="yellow";
+         } 
+         function myMauseOut(){
+            document.getElementById("m6").style.backgroundColor="pink";
+             } 
+</script>
+<body>
+   <div id="m1" 
+   onmousedown = "myMausedown()">
+    check-1
+   </div> 
+   <div id="m2" 
+   onmouseup = "myMauseUp()">
+    check-1
+   </div> 
+   <div id="m3" 
+   onmouseover = "myMauseOver()">
+    check-1
+   </div> 
+   
+   <div id="m4" 
+   onmouseleave = "myMauseLeave()">
+    check-1
+   </div> 
+   <div id="m5" 
+   onmousewheel = "myMauseWheel()">
+    check-1
+   </div> 
+   <div id="m6" 
+   onmouseout = "myMauseOut()">
+    check-1
+   </div> 
+</body>
+</html>

@@ -8,12 +8,57 @@
 <body>
 	<form action="">
 <h1>Onclick Event Examples in Javascript</h1>
-<input type="text" name="myform" value="bg change" onfocus="onFocus()">
+<button type="button" name="myform" value="bg change" onmouseover="onFocus()"> skyblue</button>
+<br>
+<button type="button
+" name="myform" value="bg change" onmouseout="outFocus()"> green</button>
+
+
+<button type="button
+" name="myform" value="bg change" onmouseleave="leaveFocus()">yellow</button>
+
+
+<button type="button
+" name="myform" value="bg change" onmousedown="downFocus()">red
+</button>
+
+
+
+<button type="button
+" name="myform" value="bg change" onmouseup="upFocus()">blue</button>
+
+
+<button type="button
+" name="myform" value="bg change" onmouseenter="enterFocus()">pink
+
+</button>
+
+
 </form>
 <script type="text/javascript">
 	function onFocus()
 	{
+		document.body.style.background="skyblue";
+	}
+	function outFocus()
+	{
+		document.body.style.background="green";
+	}
+	function leaveFocus()
+	{
+		document.body.style.background="yellow";
+	}
+	function downFocus()
+	{
+		document.body.style.background="red";
+	}
+	function upFocus()
+	{
 		document.body.style.background="blue";
+	}
+	function enterFocus()
+	{
+		document.body.style.background="pink";
 	}
 
 
